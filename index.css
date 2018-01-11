@@ -1,0 +1,664 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: lato;
+}
+
+.vs-flower:before {
+    content: "\f04b";
+    font-size: 30px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    padding: 50px;
+    font-size: 14px;
+    font-family: 'lato';
+    width: 100%;
+    margin: auto;
+}
+
+
+.left-header h3,
+.left-header #flower {
+    display: inline;
+}
+
+.left-header h3 {
+    font-size: 28px;
+    color: #e67c00;
+    font-family: arvo;
+}
+
+.left-header #flower {
+    color: #badfff;
+}
+
+.left-header h3:after {
+    content: "";
+    position: absolute;
+    /* Absolute Changes li margin */
+    width: 1px;
+    height: 35px;
+    background-color: #888888;
+    margin-left: 25px;
+}
+
+.left-header #m {
+    font-size: 32px;
+}
+
+.left-header #a {}
+
+.left-header #r {}
+
+.left-header #i {}
+
+.left-header #g {}
+
+.left-header #o {}
+
+.left-header #l {}
+
+.left-header #d {}
+
+.left-header #logo {
+    float: left;
+}
+
+.left-header #left-nav-menu {
+    float: ;
+    text-align: center;
+    overflow: clear;
+    margin: 15px 0 0 25px;
+    float: left;
+    /* Menu Margin */
+}
+
+.left-header #left-nav-menu .left-nav-arrow span {
+    display: none;
+}
+
+.right-header #right-nav-menu {
+    float: ;
+    text-align: center;
+    overflow: clear;
+    margin-top: 16px;
+    /* Menu Margin */
+}
+
+.left-header #left-nav-menu ul li {
+    display: inline;
+    list-style: none;
+    margin: 0 0 0 20px;
+}
+
+
+.right-header {
+    float: right;
+}
+
+.right-header #right-nav-menu ul li {
+    display: inline;
+    list-style: none;
+    margin: 0 0 0 20px;
+}
+
+.right-header #right-nav-menu #user,
+.right-header #right-nav-menu #question {
+    margin: 0 5px 0 0;
+    color: #606060;
+}
+
+.right-header #right-nav-menu #support,
+.right-header #right-nav-menu #account {
+    margin: 0 5px 0 0;
+}
+
+/* Background Image */
+
+#showcase {
+    background: url(pictures/seafront.jpeg) no-repeat 0;
+    width: 100%;
+    margin: auto;
+    min-height: 450px;
+    background-size: cover;
+}
+
+.tab-holder {
+    width: 100%;
+    margin: auto;
+    height: 450px;
+    position: absolute;
+    text-align: center;
+}
+
+.tab-form {
+    width: 850px;
+    height: 50%;
+    background-color: #ededed;
+    margin: 0 auto;
+    position: relative;
+    transform: translateY(50%);
+}
+
+.tab-form nav {
+    width: 100%;
+}
+
+.tab-form .tabs {
+    width: 850px;
+    text-align: left;
+    transform: translateY(-100%);
+    width: 100%;
+}
+
+.tab-form nav .tabs li {
+    display: inline;
+    padding: 10px 30px;
+    background-color: #ffffff;
+    margin: 0 0 0 0px;
+    cursor: pointer;
+    font-size: 12.5px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.tab-form nav .tabs li span {
+    margin-right: 10px;
+}
+
+.tab-form .panel {
+    display: none;
+}
+
+.tab-form .panel.active {
+    display: block;
+}
+
+/* tab decoration */
+
+#panel1 {
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.hotel {
+    width: 100%;
+    padding: 0px 20px;
+}
+
+.hotel ul {
+    padding: 10px;
+}
+
+/* main lines for box editing */
+
+.hotel ul li {
+    display: inline;
+    text-align: center;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.hotel ul li input {
+    padding: 10px;
+    position: relative;
+    border: 2px solid transparent;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .1)
+}
+
+.hotel ul li #hotel-icon {
+    position: absolute;
+    left: 0;
+}
+
+.hotel ul li button {
+    width: 55px;
+    height: 40px;
+    border: none;
+    box-shadow: none;
+    background-color: #e89800;
+    color: gray;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .1);
+    transform:translateY(1px);
+}
+
+/* main lines for box editing */
+
+.hotel .date-range input {
+    width: 91px;
+    position: relative;
+    text-indent: 5px;
+}
+
+.hotel .date-range span {
+    position: absolute;
+    left: 0;
+    top: 15%;
+    font-size: px
+}
+
+.flights #flight-picker {
+    width: 100%;
+    overflow: hidden;
+}
+
+.flights #flight-picker a {
+    text-decoration: none;
+    color: black;
+}
+
+.flights #flight-picker li:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    border-bottom: 1px solid black;
+    transition: .4s;
+}
+
+.flights #flight-picker li:hover:after {
+    width: 100%;
+}
+
+.flights #flight-picker li {
+    display: inline;
+    font-size: 12px;
+    text-align: center;
+    margin: 0 0 0 20px;
+    float: left;
+    position: relative;
+}
+
+.flights .flights-menu ul {
+    margin-top: 50px;
+}
+
+.flights .flights-menu ul li {
+    display: inline;
+}
+
+.flights .flights-menu input {
+    padding: 10px;
+    position: relative;
+    border: 2px solid transparent;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.flights .flights-menu .from-to input {
+    width: 190px;
+}
+
+.flights .flights-menu .depart-box {
+    position: relative;
+}
+
+.flights .flights-menu .depart-box span {
+    position: absolute;
+    left: 0;
+    top: 10%
+}
+
+.flights .flights-menu .depart-box input {
+    width: 120px;
+    text-indent: 5px;
+}
+
+.flights .flights-menu input::-webkit-input-placeholder {
+    color: black;
+}
+
+.flights ul li button {
+    width: 55px;
+    height: 40px;
+    border: none;
+    box-shadow: none;
+    background-color: #e89800;
+    color: gray;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .1);
+    transform:translateY(1px);
+}
+
+.cars #car-drop-off {
+    width: 100%;
+    overflow: hidden;
+}
+
+.cars #car-drop-off li {
+    display: inline;
+    font-size: 12px;
+    text-align: left;
+    margin: 0 0 0 20px;
+    float: left;
+    position: relative;
+}
+
+.cars #car-drop-off a {
+    text-decoration: none;
+    color: black;
+}
+
+.cars #car-drop-off li:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    border-bottom: 1px solid black;
+    transition: .4s;
+}
+
+.cars #car-drop-off li:hover:after {
+    width: 100%;
+}
+
+.cars .cars-menu {
+    margin-top: 50px;
+}
+
+.cars .cars-menu li {
+    display: inline;
+}
+
+.cars .cars-menu input {
+    padding: 10px;
+    position: relative;
+    border: 2px solid transparent;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.cars .cars-menu li button {
+    width: 55px;
+    height: 40px;
+    border: none;
+    box-shadow: none;
+    background-color: #e89800;
+    color: gray;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .1);
+    transform:translateY(1px);
+}
+
+.cars .cars-menu .car-where input {
+    width: 300px;
+}
+
+.cars .cars-menu .cars-calendar {
+    position: relative;
+}
+
+.cars .cars-menu .cars-calendar input {
+    text-indent: 5px;
+}
+
+.cars .cars-menu .cars-calendar span {
+    position: absolute;
+    left: 0;
+    top: 10%;
+}
+
+
+
+.packages #package-picker {
+    width: 100%;
+    overflow: hidden;
+}
+
+.packages #package-picker li {
+    display: inline;
+    font-size: 12px;
+    text-align: left;
+    margin: 0 0 0 20px;
+    float: left;
+    position: relative;
+}
+
+.packages .package-menu {
+    margin-top: 50px;
+}
+
+.packages .package-menu li {
+    display: inline;
+    position: relative;
+}
+
+.packages #package-picker a {
+    text-decoration: none;
+    color: black;
+}
+
+.packages .package-menu input {
+    padding: 10px;
+    position: relative;
+    border: 2px solid transparent;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.packages .package-menu li button {
+    width: 55px;
+    height: 40px;
+    border: none;
+    box-shadow: none;
+    background-color: #e89800;
+    color: gray;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .1);
+    transform:translateY(1px);
+}
+
+.packages .package-menu .package-calendar input {
+    width: 100px;
+    text-indent: 5px;
+}
+
+.packages .package-menu .package-calendar span {
+    position: absolute;
+    left: 0;
+    top: 10%;
+}
+
+.packages .package-menu .package-people input {
+    width: 150px;
+}
+
+
+.cruises .cruise-menu {
+    margin-top: 50px;
+}
+
+.cruises .cruise-menu li {
+    display: inline;
+    position: relative;
+}
+
+.cruises .cruise-menu input {
+    padding: 10px;
+    position: relative;
+    border: 2px solid transparent;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .1);
+    width: 175px;
+}
+
+.cruises .cruise-menu li button {
+    width: 55px;
+    height: 40px;
+    border: none;
+    box-shadow: none;
+    background-color: #e89800;
+    color: gray;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .1);
+    transform:translateY(1px);
+}
+
+
+@media (max-width:1408px) {}
+
+@media (max-width:1268px) {
+    header #right-nav-menu #support,
+    header #right-nav-menu #account {
+        display: none;
+    }
+
+    .left-header #left-nav-menu .left-nav-hide span {
+        display: none;
+    }
+
+    .left-header #left-nav-menu ul li {
+        margin: 0 0 0 5px;
+        padding: 0 0 0 0px;
+    }
+
+    .left-header #left-nav-menu .left-nav-arrow span {
+        display: inline;
+        margin-left: 5px;
+    }
+
+}
+
+@media (max-width:933px) {
+    #panel1 {
+        margin-top: -10px;
+    }
+
+    .hotel ul li input {
+        width: 50%;
+        position: relative;
+    }
+
+    .hotel .date-range input {
+        width: 50%;
+        position: relative;
+        text-indent: 20px;
+    }
+
+    .hotel .date-range span {
+        top: 27.5%;
+        font-size: 12px;
+        width: 55%;
+    }
+
+    .hotel ul li {
+        display: block;
+        position: relative;
+    }
+
+    .flights .flights-menu ul li {
+        display: block;
+    }
+
+    .flights .flights-menu ul {
+        margin-top: 0;
+    }
+
+    .flights .flights-menu .from-to input {
+        width: 50%;
+        position: relative;
+    }
+
+    .flights .flights-menu ul li input {
+        width: 50%;
+        position: relative;
+    }
+
+    .flights .flights-menu ul .depart-box input {
+        width: 50%;
+        position: relative;
+        text-indent: 20px;
+    }
+
+    .flights .flights-menu ul .depart-box span {
+        width: 55%;
+        top: 27.5%;
+    }
+
+    .cars .cars-menu {
+        margin-top: 10px;
+    }
+
+    .cars .cars-menu li {
+        display: block;
+    }
+
+    .cars .cars-menu li input {
+        width: 50%;
+    }
+
+    .cars .cars-menu .cars-calendar span {
+        width: 55%;
+        top: 27.5%;
+    }
+
+    .cars .cars-menu .car-where input {
+        width: 50%;
+    }
+
+    .packages .package-menu {
+        margin-top: 0px;
+    }
+
+    .packages .package-menu li {
+        display: block;
+    }
+
+    .packages .package-menu input {
+        width:50%;
+    }
+
+    .packages .package-menu .package-calendar input {
+        width:50%;
+        text-indent:20px;
+        overflow:hidden;
+    }
+
+    .packages .package-menu .package-calendar span {
+        width:55%;
+        top:27.5%;
+    }
+
+    .packages .package-menu .package-people input {
+        width:50%;
+    }
+
+    .cruises .cruise-menu {
+        margin-top: 0px;
+    }
+
+    .cruises .cruise-menu li {
+        display: block;
+        position: relative;
+    }
+
+    .cruises .cruise-menu input {
+        width:50%;
+    }
+
+    .cruises .cruise-menu li button,
+    .hotel ul li button,
+    .flights ul li button,
+    .cars .cars-menu li button,
+    .packages .package-menu li button{
+        width:50%;
+    }
+
+
+
+
+
+
+    .tab-form {
+        width: 90%;
+        height: 275px;
+        margin:
+    }
+}

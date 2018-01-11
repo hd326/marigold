@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet href=index.css>
+    <link rel=stylesheet href="vesper-icons-master/css/vesper-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Arvo|Josefin+Slab|Lato|Old+Standard+TT|Open+Sans|PT+Sans|PT+Serif|Roboto|Ubuntu|Vollkorn|Dancing+Script|Tangerine|Arimo">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.css">
+    <script type="text/javascript" src="jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
+    <script type="text/javascript" src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script src="bootstrap-daterangepicker-master/moment.min.js"></script>
+    <script src="jquery-ui-1.12.1.custom/jquery-ui.min.css"></script>
+
+    <script>
+        $(function() {
+            $('#datepicker').datepicker();
+            $('#datepicker1').datepicker();
+            $('#datepicker2').datepicker();
+            $('#datepicker3').datepicker();
+            $('#datepicker4').datepicker();
+            $('#datepicker5').datepicker();
+            $('#datepicker6').datepicker();
+        });
+    </script>
+
+    <title></title>
+</head>
+
+<body>
+
+
+    <header>
+        <div class="container">
+            <div class=left-header>
+
+                <div id="logo">
+
+                    <span class="vs vs-flower" id="flower"></span>
+                    <h3><span id=m>M</span><span id=a>a</span><span id=r>r</span><span id=i>i</span><span id=g>g</span><span id=o>o</span><span id=l>l</span><span id=d>d</span></h3>
+
+                </div>
+
+                <nav id=left-nav-menu>
+
+                    <ul>
+
+                        <li>Hotels</li>
+
+                        <li class="left-nav-arrow">Flights<span class="fa fa-caret-down"></span></li>
+
+
+                        <li class="left-nav-hide"><span>Airport Taxis</span></li>
+
+                        <li class="left-nav-hide"><span>Rental Cars</span></li>
+
+                        <li class="left-nav-hide"><span>Activities</span></li>
+
+                        <li class="left-nav-hide"><span>Cruises</span></li>
+
+                    </ul>
+
+                </nav>
+
+            </div>
+
+            <div class=right-header>
+
+                <nav id="right-nav-menu">
+
+                    <ul>
+                        <li><span id=question class="fa fa-question-circle"></span><span id="support">Support</span><span class=' fa fa-caret-down'></span></li>
+
+                        <li><span id=user class="fa fa-user-circle-o"></span><span id="account">Account</span><span class=' fa fa-caret-down'></span></li>
+
+                        <li></li>
+
+                        <li></li>
+
+                    </ul>
+
+                </nav>
+
+            </div>
+        </div>
+    </header>
+    <section id="showcase">
+        <div class="tab-holder">
+
+            <!----- Section for JQuery ----->
+
+            <div class="tab-form">
+
+                <nav>
+                    <ul class="tabs">
+                        <li rel="panel1" class="active"><span id="hotel-icon" class="fa fa-hotel"></span>HOTELS</li>
+                        <li rel="panel2"><span id="hotel-icon" class="fa fa-plane"></span>FLIGHTS</li>
+                        <li rel="panel3"><span id="hotel-icon" class="fa fa-car"></span>CARS</li>
+                        <li class="hide-tabs" rel="panel4"><span id="hotel-icon" class="fa fa-gift"></span>PACKAGES</li>
+                        <li class="hide-tabs" rel="panel5"><span id="hotel-icon" class="fa fa-ship"></span>CRUISES</li>
+                    </ul>
+                </nav>
+
+                <div id="panel1" class="panel active">
+
+                    <div class="hotel">
+                        <ul>
+                            <li><input placeholder="Where to"></li>
+
+                            <li class=date-range><input id="datepicker" placeholder="Check-in"><span class="fa fa-calendar"></span></li>
+
+                            <li class=date-range><input id="datepicker2" placeholder="Check-out"><span class="fa fa-calendar"></span></li>
+
+                            <li><input placeholder="1 Room 2 Guest"></li>
+
+                            <li><button type="submit"><span class="fa fa-arrow-right"></span></button></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div id="panel2" class="panel">
+                    <div class="flights">
+                        <nav>
+                            <ul id="flight-picker">
+                                <li><a href=#>ROUND-TRIP</a></li>
+                                <li><a href=#>ONE-WAY</a></li>
+                                <li><a href=#>MULTI-DESTINATION</a></li>
+                            </ul>
+                        </nav>
+
+                        <div class="flights-menu">
+                            <nav>
+                                <ul>
+                                    <li class="from-to"><input placeholder=From></li>
+                                    <li class="from-to"><input placeholder=To></li>
+                                    <li class="depart-box"><input id=datepicker1 placeholder="Depart - Return"><span class="fa fa-calendar"></span></li>
+                                    <li><input placeholder="1 adult, Economy"></li>
+                                    <li><button type="submit"><span class="fa fa-arrow-right"></span></button></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="panel3" class="panel">
+                    <div class="cars">
+                        <nav>
+                            <ul id="car-drop-off">
+                                <li><a href=#>SAME DROP-OFF LOCATION</a></li>
+                                <li><a href=#>DIFFERENT DROP-OFF LOCATION</a></li>
+
+                            </ul>
+                        </nav>
+
+                        <div class="cars-menu">
+                            <nav>
+                                <ul>
+                                    <li class="car-where"><input placeholder=Where></li>
+                                    <li class=cars-calendar><input id=datepicker3><span class="fa fa-calendar"></span></li>
+                                    <li class=cars-calendar><input id=datepicker4><span class="fa fa-calendar"></span></li>
+                                    <li><button type="submit"><span class="fa fa-arrow-right"></span></button></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="panel4" class="panel">
+                    <div class="packages">
+                        <nav>
+                            <ul id="package-picker">
+                                <li><a href=#><input type=radio name=rating value=yes>Flight + Hotel</a></li>
+                                <li><a href=#><input type=radio name=rating value=yes>Flight + Hotel + Car</a></li>
+
+                            </ul>
+                        </nav>
+
+                        <div class="package-menu">
+                            <nav>
+                                <ul>
+                                    <li><input placeholder="From Where?"></li>
+                                    <li><input placeholder="To Where?"></li>
+                                    <li class="package-calendar"><input id=datepicker5><span class="fa fa-calendar"></span></li>
+                                    <li class="package-calendar"><input id=datepicker6><span class="fa fa-calendar"></span></li>
+                                    <li class="package-people"><input placeholder="Number of travelers"></li>
+                                    <li><button type="submit"><span class="fa fa-arrow-right"></span></button></li>
+
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="panel5" class="panel">
+                    <div class="cruises">
+
+                        <div class="cruise-menu">
+                            <nav>
+                                <ul>
+                                    <li><input placeholder="Which Port?"></li>
+                                    <li><input placeholder="Where are you going?"></li>
+                                    <li><input placeholder="Which cruise line?"></li>
+                                    <li><input placeholder="When?"></li>
+                                    <li><button type="submit"><span class="fa fa-arrow-right"></span></button></li>
+
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!----- Section For JQuery ----->
+
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        $(function() {
+            $('.tab-form .tabs li').on('click', function() {
+                var panelToShow = $(this).attr('rel');
+
+                // this var panelToShow is referencing the 'rel' attr in the .tabs li
+
+                $('.tab-form .panel.active').fadeToggle(300, function() {
+                    $(this).removeClass('active');
+
+                    $('#' + panelToShow).fadeToggle(300, function() {
+
+                        $(this).addClass('active');
+
+                    });
+                });
+            });
+        });
+    </script>
+
+</body>
+
+
+
+
+</html>
